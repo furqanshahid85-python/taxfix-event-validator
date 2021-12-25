@@ -16,6 +16,8 @@ source env/bin/activate
 Install Packages
 pip install -r requirements.txt
 
+Run program
+python taxfix.py
 
 # Approach
 
