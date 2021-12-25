@@ -1,0 +1,131 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Taxfix Event Validation",
+    "description": "Validates Taxfix Incomming Events Schema",
+    "properties": {
+        "id": {
+            "description": "The unique identifier for an event",
+            "type": "string"
+        },
+        "received_at": {
+            "description": "Timestamp when event is recieved",
+            "type": "string",
+            "format": "date-time"
+        },
+        "anonymous_id": {
+            "description": "some anonymous id for the event",
+            "type": "string"
+        },
+        "context_app_version": {
+            "description": "context version of the app",
+            "type": "string"
+        },
+        "context_device_ad_tracking_enabled": {
+            "description": "boolean check for ad tracking enabled or disabled",
+            "type": "boolean"
+        },
+        "context_device_manufacturer": {
+            "description": "manufacturer of the device",
+            "type": "string"
+        },
+        "context_device_model": {
+            "description": "device model",
+            "type": "string"
+        },
+        "context_device_type": {
+            "description": "type of the event source device",
+            "type": "string"
+        },
+        "context_library_name": {
+            "description": "library information",
+            "type": "string"
+        },
+        "context_library_version": {
+            "description": "library version information",
+            "type": "string"
+        },
+        "context_locale": {
+            "description": "locale of the event source",
+            "type": "string"
+        },
+        "context_network_wifi": {
+            "description": "network type of the event source",
+            "type": "boolean"
+        },
+        "context_os_name": {
+            "description": "operating system name of the device",
+            "type": "string"
+        },
+        "context_timezone": {
+            "description": "time zone of event source",
+            "type": "string"
+        },
+        "event": {
+            "description": "event type",
+            "type": "string"
+        },
+        "event_text": {
+            "description": "text information for the event recieved ",
+            "type": "string"
+        },
+        "original_timestamp": {
+            "description": "original timestamp of the event",
+            "type": "string",
+            "format": "date-time"
+        },
+        "sent_at": {
+            "description": "timestamp for when event was generated",
+            "type": "string",
+            "format": "date-time"
+        },
+        "timestamp": {
+            "description": "timestamp",
+            "type": "string",
+            "format": "date-time"
+        },
+        "user_id": {
+            "description": "id of the user",
+            "type": "integer"
+        },
+        "context_network_carrier": {
+            "description": "network carrier of the event source",
+            "type": "string"
+        },
+        "context_device_token": {
+            "description": "device token information",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "context_traits_taxfix_language": {
+            "description": "taxfix language information",
+            "type": "string"
+        }
+    },
+    "required": [
+        "id",
+        "received_at",
+        "anonymous_id",
+        "context_app_version",
+        "context_device_ad_tracking_enabled",
+        "context_device_manufacturer",
+        "context_device_model",
+        "context_device_type",
+        "context_library_name",
+        "context_library_version",
+        "context_locale",
+        "context_network_wifi",
+        "context_os_name",
+        "context_timezone",
+        "event",
+        "event_text",
+        "original_timestamp",
+        "sent_at",
+        "timestamp",
+        "user_id",
+        "context_network_carrier",
+        "context_device_token",
+        "context_traits_taxfix_language"
+    ]
+}
